@@ -1,0 +1,74 @@
+<head>
+    <script src="homepage.js"></script>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body>
+    <h1>Pet Shop</h1>
+    <img src="http://images.clipartpanda.com/dog-and-cat-silhouette-stock-illustration-26622153-dog-cat-play.jpg"></img>
+    <h3>Sweeney&Hong</h3>
+<h1>Welcome to our database management page</h1>
+
+<p>this web application provides 5 different functionalities to interact with the petshop database.</p>
+<p>to exit the application, please press the exit application button</p>
+
+<h3>Change the price of all pets of a specific Animal Class</h3>
+<h4>Class</h4>
+<input type="text" id="textbox1a">
+<h4>Price</h4>
+<input type="text" onkeypress="return isNumberKey(this, event)" id="textbox1b"><br>
+<input type="button" onclick="firstbutton()" value="Change Price"> <img src="https://images-na.ssl-images-amazon.com/images/I/31AE55xP27L._SL500_.jpg" width="100" height="100"></img><br>
+<br>
+
+<h3>Delete employee based on employee ID</h3>
+<h4>EmployeeID</h4>
+<input type="text" onkeypress="return isNumberKey(this, event)" id="textbox2"><br>
+<input type="button" onclick="secondbutton()" value="Delete Employee"><br>
+<br>
+
+<h3>Find sum of pet sales and item sales for a store based on store ID</h3>
+<input type="text" onkeypress="return isNumberKey(this, event)" id="textbox3"><br>
+<h4>Pet Revenue</h4>
+<input type="text" id="answerbox3a"><br>
+<h4>Item Revenue</h4>
+<input type="text" id="answerbox3b"><br>
+<input type="button" onclick="thirdbutton()" value="Submit StoreID"><br>
+<br>
+
+<h3>Display if an entered Pet ID corresponds to a pet that has been sold</h3>
+<h4>PetID</h4>
+<input type="text" onkeypress="return isNumberKey(this, event)" id="textbox4"><br>
+<h4>Answer</h4>
+<input type="text" id="answerbox4" size="50"><br>
+<input type="button" onclick="fourthbutton()" value="Check Pet"><br>
+<br>
+
+<img src="https://s-media-cache-ak0.pinimg.com/originals/d8/2c/5d/d82c5daa28f102c066d30f6dc05fd5c1.jpg" width="100" height="100"></img>
+
+<h3>Add a pet to a store</h3>
+<h4>pName</h4>
+<input type="text" id="textbox5a"><br>
+<h4>age</h4>
+<input type="text" onkeypress="return isNumberKey(this, event)" id="textbox5b"><br>
+<h4>price</h4>
+<input type="text" onkeypress="return isNumberKey(this, event)" id="textbox5c"><br>
+<h4>storeID</h4>
+<input type="text" onkeypress="return isNumberKey(this, event)" id="textbox5d"><br>
+<h4>spayedNeutered</h4>
+<input type="text"  onkeypress="return isNumberKey(this, event)" ="textbox5e"><br>
+<h4>className</h4>
+<input type="text" id="textbox5x"><br>
+<input type="button" onclick="fifthbutton()" value="Add Pet"><br>
+<br>
+
+<input class = exit type="button" onclick="exitbutton()" value="Exit Application"><br>
+<img src="https://clipartion.com/wp-content/uploads/2015/11/sea-turtle-pv.jpg" width="100" height="100"></img>
+
+<h2>Output Display</h2>
+
+<ul id="list">
+
+</ul>
+
+</body>
